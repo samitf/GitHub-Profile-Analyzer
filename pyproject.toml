@@ -1,0 +1,20 @@
+[project]
+name = "GitHub-Profile-Analyzer"
+version = "0.1.0"
+description = "A Python project to analyze public GitHub profiles"
+readme = "README.md"
+requires-python = ">=3.11.1"
+dependencies = [
+    "requests",
+    "pandas",
+    "matplotlib",
+    "typer",
+    "jinja2"
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "isort", "flake8"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
