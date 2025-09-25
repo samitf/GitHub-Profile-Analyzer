@@ -9,7 +9,8 @@ dependencies = [
     "pandas",
     "matplotlib",
     "typer",
-    "jinja2"
+    "jinja2",
+    "pytest"
 ]
 
 [project.optional-dependencies]
