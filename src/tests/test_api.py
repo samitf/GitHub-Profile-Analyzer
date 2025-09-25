@@ -39,7 +39,7 @@ def test_get_user_success():
         assert user["public_repos"] == 2
 
 def test_get_repos_pagination():
-    # simulate 2 pages: first with 2 repos, second empty
+    # simulates 2 pages: first with 2 repos, second empty
     repos_page_1 = [
         {"name": "repo1", "stargazers_count": 5},
         {"name": "repo2", "stargazers_count": 2},
