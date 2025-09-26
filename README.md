@@ -66,31 +66,35 @@ Example: ```python sandbox.py samitf --save --out report.json```
 
 ---
 
-github-profile-analyzer/
-├── src/
-│   └── analyze/
-│       ├── __init__.py
-│       ├── api.py                   # GitHub API wrapper
-│       ├── analyzer.py              # Analysis logic
-│       ├── models.py                # Dataclasses for repo/analysis results
-│   └── tests/
-│       ├── test_analyzer.py         # Analyzer unit-testing
-│       ├── test_api.py              # Api unit-testing
-├── sandbox.py                       # Quick runner for testing analysis
-├── requirements.txt
-├── .gitignore
-└── README.md
-
+## 📂 Project Structure
+   ```pgsql
+   github-profile-analyzer/
+   ├── src/
+   │   └── analyze/
+   │       ├── __init__.py
+   │       ├── api.py                   # GitHub API wrapper
+   │       ├── analyzer.py              # Analysis logic
+   │       ├── models.py                # Dataclasses for repo/analysis results
+   │   └── tests/
+   │       ├── test_analyzer.py         # Analyzer unit-testing
+   │       ├── test_api.py              # Api unit-testing
+   ├── sandbox.py                       # Quick runner for testing analysis
+   ├── requirements.txt
+   ├── .gitignore
+   └── README.md
+   ```
 ---
 
 ## ➡️Output Example
 - ```python sandbox.py samitf```
+- Output:\
+  ```Fetching repos for 'samitf' (token set: False)...```\
+  ```Fetched 17 repos. Running analysis...```
+  
 - Output:
-  ```
-  Fetching repos for 'samitf' (token set: False)...
-  Fetched 17 repos. Running analysis...
-  ```
-- Output JSON:
+  <details open>
+  <summary>JSON</summary>
+     
   ```JSON
   {
     "username": "samitf",
@@ -215,3 +219,6 @@ github-profile-analyzer/
     }
   }
   ```
+  </details>
+
+---
